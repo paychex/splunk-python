@@ -105,7 +105,7 @@ def main():
                         help='Splunk app that you want to pull down objects for. If more than one separate by commas.',
                         required=True)
     parser.add_argument('-repo_location',
-                        help='BitBucket repo location on machine executing the script.  Must contain a .git folder.',
+                        help='Git repo location on machine executing the script.  Must contain a .git folder.',
                         required=True)
     parser.add_argument('-owners',
                         help='Enter one or more object owners in a comma separated list to limit what objects you '
@@ -123,7 +123,7 @@ def main():
                              'recommended to use with "Y" unless you are sure you have no pending commits.',
                         required=False, choices=['Y', 'N'])
     parser.add_argument('-commit_message',
-                        help='Provide message you want with the commit.  Defaults to \"Splunk to Bitbucket python '
+                        help='Provide message you want with the commit.  Defaults to \"Splunk to git python '
                              'script\" if not provided.',
                         required=False)
     parser.add_argument('-days_filter',
@@ -158,7 +158,7 @@ def main():
         checkout_branch = args.checkout_branch.strip()
 
     if args.commit_message is None:
-        commit_message = 'Splunk to Bitbucket python script.'
+        commit_message = 'Splunk to git python script.'
     else:
         commit_message = args.commit_message.strip()
 
