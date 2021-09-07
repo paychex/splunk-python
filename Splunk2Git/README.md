@@ -93,4 +93,4 @@ pre-built panels | /ui/panels
 search macros | /admin/macros
 
 
-Once the data has been laid down in your local repo's directory, the gitpython library will add each file that is written individually to git. It will then run a commit with the comment you input in that argument when you execute the script. If no argument is provided the commit will be "Splunk to Bitbucket python script." Once the commit completes it pushes the commit to the selected branch you input when executing the script.
+Once the data has been laid down in your local repo's directory, the gitpython library will add each file that is written individually to git. It will then run a commit with the comment you input in that argument when you execute the script. If no argument is provided the commit will be "Splunk to git python script." Once the commit completes it pushes the commit to the selected branch you input when executing the script.
