@@ -6,7 +6,7 @@ This script currently has functionality to export shared Splunk assets from any 
 
 ## What is git?
 
-If you don't know what git is, you can learn more about what git is [here](https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F). Git is a distributed revision control and source code management system.  This script require's you to already have git installed and properly configured to function with your repository.
+If you don't know what git is, you can learn more about what git is [here](https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F). Git is a distributed revision control and source code management system.  This script requires you to already have git installed and properly configured to function with your repository.
 
 ## Requirements
 
