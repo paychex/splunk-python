@@ -2,7 +2,7 @@
 
 ## What is CSV2Splunk?
 
-CSV2Splunk is a python script that allows you to upload a csv file to splunk via splunk's API. Splunk currently does not have a way to upload a CSV directly via the API, but using splunk's search API with a `makresults` command, and then passing in the CSV contents to that search as a JSON payload, allows us to use splunk's native JSON parsing to parse it back into a table and then write that to a lookup file.
+CSV2Splunk is a python script that allows you to upload a csv file to splunk via splunk's API. Splunk currently does not have a way to upload a CSV directly via the API, but using splunk's search API with a `makeresults` command, and then passing in the CSV contents to that search as a JSON payload, allows us to use splunk's native JSON parsing to parse it back into a table and then write that to a lookup file.
 
 ⚠️ **WARNING**: When sending data to a search head cluster, it works best if you use a specific search head in the cluster as your host instead of using a load balanced address.  This is because it is possible for you to be routed to a different search head when appending to the lookup file in batches which may or may not have the most up to date copy of the lookup file replicated to it. To avoid this problem use a specific search head in your request.
 
