@@ -57,7 +57,7 @@ optional arguments:
                         branch put "Y" here. Defaults to N if not provided. This is NOT recommended to use with "Y" unless you are
                         sure you have no pending commits.
   -commit_message COMMIT_MESSAGE
-                        Provide message you want with the commit. Defaults to "Splunk to Bitbucket python script" if not provided.
+                        Provide message you want with the commit. Defaults to "Splunk to git python script" if not provided.
   -days_filter DAYS_FILTER
                         Filter objects that have only been updated in the last number of days you input here. Defaults to last
                         7 days if not here. Inputting "all time" will pull everything. Input only accepts whole numbers or "all
